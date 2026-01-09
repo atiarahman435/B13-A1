@@ -1,0 +1,140 @@
+/* Base reset */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Reusable container */
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header bar */
+.site-header{
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 0;
+}
+
+/* Navbar layout */
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand img{
+  height: 32px;
+  width: auto;
+  display: block;
+}
+
+
+/* Links */
+.nav-links{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+.nav-links a:hover{
+  color: #111827;
+}
+
+/* Button */
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+  border-radius: 0;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+}
+
+
+.btn-primary{
+  background-color: #22c55e;
+  color: #ffffff;
+}
+
+.btn-primary:hover{
+  background-color: #16a34a;
+}
+.hero{
+  position: relative;
+  /* আপনার hero image এখানে দিন */
+  background-image: url("./hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* height feel */
+  padding: 110px 0;
+  color: #ffffff;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* dark overlay */
+}
+
+.hero .container{
+  position: relative; /* overlay-এর উপর টেক্সট রাখতে */
+}
+
+.hero-content{
+  max-width: 720px;
+  margin: 0 auto;       /* center block */
+  text-align: center;   /* text center */
+}
+
+.hero-title{
+  margin: 0 0 16px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-text{
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+}
+
+.highlight{
+  color: #22c55e;
+}
+
+
